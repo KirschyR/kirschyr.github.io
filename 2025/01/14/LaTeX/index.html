@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="Kirschy">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://github.com/KirschyR/kirschyr.github.io.git/2025/01/14/latex/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+    
+    
+        
+        <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LaTeX Noob">
+<meta property="og:url" content="https://github.com/KirschyR/kirschyr.github.io.git/2025/01/14/LaTeX/index.html">
+<meta property="og:site_name">
+<meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/images/redefine-og.webp">
+<meta property="article:published_time" content="2025-01-13T16:22:32.000Z">
+<meta property="article:modified_time" content="2025-01-13T17:01:39.030Z">
+<meta property="article:author" content="Redefine Team">
+<meta property="article:tag" content="LaTeX">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/images/redefine-og.webp">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/orca.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/orca.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/orca.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            LaTeX Noob | Buried Sky
+        
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/build/tailwind.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+        <link href="" rel="stylesheet">
+    
+    
+        <link href="" rel="stylesheet">
+    
+    
+    
+        
+<script src="/js/build/libs/anime.min.js"></script>
+
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"github.com","root":"/","language":"zh-CN"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":true,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":true},"scroll_progress":{"bar":true,"percentage":false},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":true,"custom_message":"Welcome!"},"open_graph":{"enable":true,"image":"/images/redefine-og.webp","description":"Hexo Theme Redefine, Redefine Your Hexo Journey."},"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/brightside.webp","dark":"/images/darkside2.webp"},"title":"Kirschy's Blog","subtitle":{"text":[],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":100,"starting_delay":1000,"backing_delay":2000,"loop":false,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"3.0rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":"https://github.com/KirschyR","instagram":null,"zhihu":"https://www.zhihu.com/people/jerry--50","twitter":null,"email":"1962913184@qq.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"11.4.1"}},"version":"2.8.2","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"About":{"icon":"far fa-whale","submenus":{"Me":"/about","Github":"https://github.com/KirschyR","Zhihu":"https://www.zhihu.com/people/jerry--50"}}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+<body>
+	<div class="progress-bar-container">
+	
+	<span class="scroll-progress-bar"></span>
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	<!--        <span class="swup-progress-icon">-->
+	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+	<!--        </span>-->
+	
+</div>
+
+<style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    <h2 class="ml13">
+        Welcome!
+    </h2>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+        var animation = anime.timeline({ loop: true })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [20, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                filter: ['blur(5px)', 'blur(0px)'],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 300 + 20 * i,
+            })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [0, -20],
+                opacity: [1, 0],
+                filter: ['blur(0px)', 'blur(5px)'],
+                easing: "easeInExpo",
+                duration: 1000,
+                delay: (el, i) => 15 * i,
+                complete: function() {
+                    hidePreloader();
+                }
+            }, '-=700');
+
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            setTimeout(hidePreloader, 5000); // Call hidePreloader after 5000 milliseconds if not already called by animation
+        });
+
+        function hidePreloader() {
+            var preloader = document.querySelector('.preloader');
+            preloader.style.opacity = '0';
+            setTimeout(function () {
+                preloader.style.display = 'none';
+            }, 200);
+        }
+    </script>
+</div>
+
+<main class="page-container" id="swup">
+
+	
+
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+                <a class="logo-image h-8 w-8 sm:w-10 sm:h-10 mr-3" href="/">
+                    <img src="/images/orca.svg" class="w-full h-full rounded-sm">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                Buried Sky
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    首页
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown"
+                                   href="#"
+                                        onClick=&#34;return false;&#34;>
+                                    <i class="far fa-whale fa-fw"></i>
+                                    关于
+                                    <i class="fa-solid fa-chevron-down fa-fw"></i>
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                        
+                                            <li>
+                                                <a href="/about">
+                                                    ME
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="https://github.com/KirschyR">
+                                                    GITHUB
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/jerry--50">
+                                                    ZHIHU
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                首页
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
+                        
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                             navbar-data-toggle="submenu-About"
+                        >
+                            <span>
+                                关于
+                            </span>
+                            
+                                <i class="fa-solid fa-chevron-right fa-sm fa-fw transition-all"></i>
+                            
+                        </div>
+                        
+
+                        
+                            <div class="flex-col items-start px-2 py-2 hidden" data-target="submenu-About">
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           href="/about">ME</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           href="https://github.com/KirschyR">GITHUB</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://www.zhihu.com/people/jerry--50">ZHIHU</a>
+                                    </div>
+                                
+                            </div>
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+		</div>
+
+		<div class="main-content-body transition-fade-up">
+			
+
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			<div class="w-full flex items-center pt-6 justify-start">
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">LaTeX Noob</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/magpie.svg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">Kirschy</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">01-14-2025 00:22:32</span>
+        <span class="mobile">01-14-2025 00:22:32</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">01-14-2025 01:01:39</span>
+            <span class="mobile">01-14-2025 01:01:39</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/LaTeX/">LaTeX</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2.2k 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>9 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<p>在VSCode上配置TexLive简直是一大难事（花费一上午的时间），博主花了一下午的时间慢慢消化LaTeX的一些基础知识，基本都是参考<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43301333/article/details/106365391" >该篇CSDN<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>所作，然而也正是”基础知识“，该文章后续将会视使用情况持续更新。</p>
+<p>作为一种文本标记语言，尽管非所见即所得，但其在正式的排版体系中所展示出的优越性以及其之后必然愈发突出的工具属性，更让博主认为有学习LaTeX的必要（或者说只是接触早晚的事）。工具性质知识的学习一定是比博物性质知识的学习更加重要的。</p>
+<p>Ok, here we go.</p>
+<h2 id="一、整体框架"><a href="#一、整体框架" class="headerlink" title="一、整体框架"></a>一、整体框架</h2><h3 id="1-声明"><a href="#1-声明" class="headerlink" title="1-声明"></a>1-声明</h3><p>文章的最开始，我要写一篇文章：<code>documentclass[UTF8]&#123;ctexart&#125;</code>。</p>
+<p>中括号是文章编码、ctex是中文。</p>
+<blockquote>
+<p>关于从.tex到.pdf的几种编译路线：</p>
+</blockquote>
+<h3 id="2-导入"><a href="#2-导入" class="headerlink" title="2-导入"></a>2-导入</h3><p>说明要开始写文章，导入一些写文章的时候会用到的东西。可以单行导入多个宏，也可以分开写。</p>
+<p><code>\usepackage&#123;setspace,lipsum&#125;</code> or </p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;setspace&#125;</span><br><span class="line"><span class="keyword">\usepackage</span>&#123;lipsum&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="3-环境"><a href="#3-环境" class="headerlink" title="3-环境"></a>3-环境</h3><p>包含了文章的内容：</p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line">	<span class="comment">%%%正文</span></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="二、正文结构"><a href="#二、正文结构" class="headerlink" title="二、正文结构"></a>二、正文结构</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1-标题"></a>1-标题</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\title</span>&#123;这是标题<span class="keyword">\LaTeX</span>&#125;</span><br><span class="line"><span class="keyword">\author</span>&#123;Kirschy&#125;</span><br><span class="line"><span class="keyword">\date</span>&#123;01-13-2025&#125;</span><br><span class="line"><span class="keyword">\maketitle</span></span><br></pre></td></tr></table></figure></div>
+
+<p>![Fig1](E:\MyBlog\source\images\LaTeX Noob Learning\Fig1.png)</p>
+<p>实际上，<code>\LaTeX</code>是LaTeX在编译时会被识别的一个特殊符号，最后渲染结果如上图。如果在其之后还要写东西，一定注意给一个空格！</p>
+<h3 id="2-章节"><a href="#2-章节" class="headerlink" title="2-章节"></a>2-章节</h3><p>层次分明：分章节过程中最多无脑两次sub，如果继续往下分段则是<code>\paragraph</code>。<code>\paragraph</code>的作用仅仅是另起一段并且在开头添加了指定内容的粗体段标题。后面的文字会紧跟小标题，不会像section一样另起一段。</p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Hello World!</span><br><span class="line"></span><br><span class="line"><span class="keyword">\section</span>&#123;<span class="keyword">\LaTeX</span> 的使用&#125;</span><br><span class="line">Do you know how to use <span class="keyword">\LaTeX</span> quickly?</span><br><span class="line"></span><br><span class="line"><span class="keyword">\subsection</span>&#123;<span class="keyword">\LaTeX</span> 的基本知识&#125;</span><br><span class="line">Here we&#x27;d like to introduce some basic information.</span><br><span class="line"></span><br><span class="line"><span class="keyword">\subsubsection</span>&#123;<span class="keyword">\LaTeX</span> 的结构&#125;</span><br><span class="line">The <span class="keyword">\LaTeX</span> &#x27;s special frame decides its wide use.</span><br><span class="line"></span><br><span class="line"><span class="keyword">\paragraph</span>&#123;Para 1&#125;In this first paragraph.</span><br><span class="line"></span><br><span class="line"><span class="keyword">\paragraph</span>&#123;Para 2&#125;Comes the paragraph2.</span><br></pre></td></tr></table></figure></div>
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="E:\MyBlog\source\images\LaTeX Noob Learning\Fig2.png"
+                      alt="Fig2" style="zoom: 67%;" 
+                >
+
+<h3 id="3-列表"><a href="#3-列表" class="headerlink" title="3-列表"></a>3-列表</h3><p>写法结构类似于document，需要一对begin+end把内容包起来。</p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;enumerate&#125;</span><br><span class="line"><span class="keyword">\item</span> 这是第一条</span><br><span class="line"><span class="keyword">\item</span> 我是第二条</span><br><span class="line"><span class="keyword">\item</span> 我是奶龙</span><br><span class="line"><span class="keyword">\item</span> 我才是奶龙</span><br><span class="line"><span class="keyword">\end</span>&#123;enumerate&#125; <span class="comment">%enumerate是枚举的意思，即列表效果</span></span><br></pre></td></tr></table></figure></div>
+
+<p>![Fig3](E:\MyBlog\source\images\LaTeX Noob Learning\Fig3.png)</p>
+<h3 id="4-目录"><a href="#4-目录" class="headerlink" title="4-目录"></a>4-目录</h3><p>使用<code>\tableofcontents</code>就可以自动解析文章的section与列表，动态标号直接生成一个目录。会要求运行两次，第一次是加载，第二次才会显示新增的条目。</p>
+<h3 id="5-换行"><a href="#5-换行" class="headerlink" title="5-换行"></a>5-换行</h3><p>类似于markdown，代码里面的内容间隔一个空行才能在最后渲染的时候出来一个换行：</p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line">	第一行</span><br><span class="line"></span><br><span class="line">	第二行</span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="6-页操作"><a href="#6-页操作" class="headerlink" title="6-页操作"></a>6-<a class="link"   target="_blank" rel="noopener" href="https://fangxincq.lofter.com/post/46712c_8fd0bff" >页操作<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%%%另起一页，两种写法</span></span><br><span class="line"><span class="keyword">\newpage</span></span><br><span class="line"><span class="keyword">\clearpage</span></span><br><span class="line"><span class="comment">%%%页号显示</span></span><br><span class="line"><span class="keyword">\pagestyle</span>&#123;empty&#125; <span class="comment">%%整篇文章都不显示页号，因为是默认有页号的</span></span><br><span class="line"><span class="keyword">\thispagestyle</span>&#123;empty&#125; <span class="comment">%%仅当前页不显示页号</span></span><br><span class="line"><span class="keyword">\setcounter</span>&#123;page&#125;&#123;1&#125; <span class="comment">%%表示页号从正文的第几页出现。</span></span><br></pre></td></tr></table></figure></div>
+
+<p>“empty”实际上可以说是规定格式的一种，即指页眉页脚都没有，另外还有三种页眉页脚格式——</p>
+<ol>
+<li><strong>plain</strong>：没有页眉，页码放在页脚处。“article”格式的文章在缺省状态下即此，是默认状态。</li>
+<li><strong>headings</strong>：没有页脚，章节的标题和页码都放在页眉处。“book”格式的文章缺省状态默认为此。</li>
+<li><strong>myheadings</strong>：没有页脚页眉页码，显示的是使用者自定义的信息。</li>
+</ol>
+<h3 id="7-转义"><a href="#7-转义" class="headerlink" title="7-转义"></a>7-转义</h3><p>意思就是让一些在LaTeX编译过程中有特殊含义的字符能够正常显示，与Markdown类似，都是使用反斜杠（<code>\</code>）指定其后近邻的特殊意义字符正常显示。</p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\&#123;</span>我用了这两个反斜杠就能让大括号被正常显示了<span class="keyword">\&#125;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>如果要显示反斜杠怎么办？稍微麻烦——<code>\verb|\|</code>，这样两个管道符中间的反斜杠就会显示出来。</p>
+<p>![Fig4](E:\MyBlog\source\images\LaTeX Noob Learning\Fig4.png)</p>
+<h2 id="三、字体显示"><a href="#三、字体显示" class="headerlink" title="三、字体显示"></a>三、字体显示</h2><h3 id="1-加粗"><a href="#1-加粗" class="headerlink" title="1-加粗"></a>1-加粗</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\textbf</span>&#123;这个样子能让大括号里的内容变成加粗黑体&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="2-字号"><a href="#2-字号" class="headerlink" title="2-字号"></a>2-字号</h3><p>有好几个等级，对应不同的名称。</p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="keyword">\normalsize</span> 不习惯这个故事 已经结尾&#125;</span><br><span class="line"></span><br><span class="line">&#123;<span class="keyword">\large</span> 连错也错的这么美 任谁都会&#125;</span><br><span class="line"></span><br><span class="line">&#123;<span class="keyword">\Large</span> 有没有人比你懂我的防备&#125;</span><br><span class="line"></span><br><span class="line">&#123;<span class="keyword">\LARGE</span> 还是会笑我傻到以为&#125;</span><br><span class="line"></span><br><span class="line">&#123;<span class="keyword">\huge</span> 这真心的话不能给&#125;</span><br><span class="line"></span><br><span class="line">&#123;<span class="keyword">\Huge</span> 多残忍也都自己安慰&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="3-字体"><a href="#3-字体" class="headerlink" title="3-字体"></a>3-字体</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="keyword">\songti</span> 宋体&#125;</span><br><span class="line">&#123;<span class="keyword">\youyuan</span> 幼圆&#125;</span><br><span class="line">&#123;<span class="keyword">\kaiti</span> 楷体&#125;</span><br><span class="line">&#123;<span class="keyword">\lishu</span> 隶书&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="4-居中"><a href="#4-居中" class="headerlink" title="4-居中"></a>4-居中</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;center&#125;</span><br><span class="line">	<span class="comment">%%%内容</span></span><br><span class="line"><span class="keyword">\end</span>&#123;center&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>下面用一张图把上面的内容囊括一下，字体似乎有点小问题：</p>
+<p>![Fig5](E:\MyBlog\source\images\LaTeX Noob Learning\Fig5.png)</p>
+<h2 id="四、公式显示"><a href="#四、公式显示" class="headerlink" title="四、公式显示"></a>四、公式显示</h2><h3 id="1-一般等式"><a href="#1-一般等式" class="headerlink" title="1-一般等式"></a>1-一般等式</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">	2=1+1 <span class="keyword">\notag</span></span><br><span class="line"><span class="keyword">\end</span>&#123;equation&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>\notag</code>是用来声明隐藏公式后面的标号的，如果不声明，公式后面会有自动动态标号。无标号公式还有几种写法，提供在下面：</p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">	<span class="keyword">\begin</span>&#123;equation*&#125;</span><br><span class="line">		3=2+1</span><br><span class="line">	<span class="keyword">\end</span>&#123;equation*&#125;</span><br><span class="line"><span class="comment">%%%——————————</span></span><br><span class="line">	<span class="keyword">\[</span></span><br><span class="line">		5=3+2 <span class="keyword">\notag</span></span><br><span class="line">	<span class="keyword">\]</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="2-公式换行"><a href="#2-公式换行" class="headerlink" title="2-公式换行"></a>2-公式换行</h3><p>普通公式在同一个环境中不支持<code>\\</code>换行操作。</p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">	<span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">		8=5+3 <span class="keyword">\\</span></span><br><span class="line">		13=8+5</span><br><span class="line">	<span class="keyword">\end</span>&#123;equation&#125;</span><br><span class="line"><span class="comment">%%%上面的写法就是错的，不能达到预期效果，应该这么写————</span></span><br><span class="line">	<span class="keyword">\begin</span>&#123;align&#125;</span><br><span class="line">		<span class="built_in">&amp;</span>21=13+8 <span class="keyword">\notag</span> <span class="keyword">\\</span></span><br><span class="line">		<span class="built_in">&amp;</span>34=21+13</span><br><span class="line">	<span class="keyword">\end</span>&#123;align&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>另外还要注意上面<code>\notag</code>的位置，是让第一行的公式不显示标号，而第二行仍然会有。而<code>&amp;</code>符号的作用就是实现不同行的公式在最左端实现对齐。</p>
+<p>&#x3D;&#x3D;WARNING！&#x3D;&#x3D;align环境需要由amsmath环境支持，一定记得在文前导入包的时候写入！</p>
+<p>![Fig6](E:\MyBlog\source\images\LaTeX Noob Learning\Fig6.png)</p>
+<h3 id="3-行内公式"><a href="#3-行内公式" class="headerlink" title="3-行内公式"></a>3-行内公式</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\paragraph</span>&#123;On in-line formulas&#125;</span><br><span class="line">众所周知，<span class="built_in">$</span>together=to+get+her<span class="built_in">$</span>;</span><br><span class="line">或者也有人说现在最好用这种：<span class="keyword">\(</span>a<span class="built_in">^</span>2+b<span class="built_in">^</span>2=c<span class="built_in">^</span>2<span class="keyword">\)</span>;</span><br><span class="line">有点像行间公式可以用<span class="keyword">\[</span><span class="keyword">\]</span>的写法，而不能用<span class="built_in">$</span><span class="built_in">$</span> <span class="built_in">$</span><span class="built_in">$</span>来代替。</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="4-公式命令"><a href="#4-公式命令" class="headerlink" title="4-公式命令"></a>4-公式命令</h3><p>其实上面写欧拉公式涉及到一些，下面给出详细的列表：（以及我自己的练手）。或许大写都是类似于<code>\Delta</code>那样的放大首字母的操作。</p>
+<table>
+<thead>
+<tr>
+<th>幂(上标)</th>
+<th>下标</th>
+<th>分式</th>
+<th>开根</th>
+<th>求和号</th>
+<th>积分号</th>
+<th>微分号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>^</td>
+<td>_</td>
+<td>\frac{分子}{分母}</td>
+<td>\sqrt{}</td>
+<td>\sum^{上限}_{起始}</td>
+<td>\int^{上限}_{下限}</td>
+<td>\mathrm{d}</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>α</th>
+<th>β</th>
+<th>γ</th>
+<th>δ</th>
+<th>Δ</th>
+<th>π</th>
+<th>ε</th>
+<th>ρ</th>
+<th>σ</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\alpha</td>
+<td>\beta</td>
+<td>\gamma</td>
+<td>\delta</td>
+<td>\Delta</td>
+<td>\pi</td>
+<td>\epsilon</td>
+<td>\rho</td>
+<td>\sigma</td>
+</tr>
+</tbody></table>
+<p>![Fig7](E:\MyBlog\source\images\LaTeX Noob Learning\Fig7.png)</p>
+<h3 id="5-矩阵与大括号"><a href="#5-矩阵与大括号" class="headerlink" title="5-矩阵与大括号"></a>5-矩阵与大括号</h3><p>矩阵的构建需要提前导入宏包<code>mathtools</code>，经过两层声明。无论是矩阵的<code>bmatrix</code>还是大括号的<code>cases</code>都只能放在<code>equation</code>环境里。</p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%%%矩阵</span></span><br><span class="line">	<span class="keyword">\[</span></span><br><span class="line">		A=<span class="keyword">\begin</span>&#123;bmatrix&#125;</span><br><span class="line">		1<span class="built_in">&amp;</span>2<span class="built_in">&amp;</span>3 <span class="keyword">\\</span></span><br><span class="line">		4<span class="built_in">&amp;</span>5<span class="built_in">&amp;</span>6</span><br><span class="line">		<span class="keyword">\end</span>&#123;bmatrix&#125;</span><br><span class="line">	<span class="keyword">\]</span></span><br><span class="line"><span class="comment">%%%大括号</span></span><br><span class="line">	<span class="keyword">\[</span></span><br><span class="line">		P(X=r)=<span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line">		<span class="built_in">&amp;</span><span class="keyword">\frac</span>&#123;e<span class="built_in">^</span>&#123;-<span class="keyword">\lambda</span>&#125;<span class="keyword">\lambda</span> <span class="built_in">^</span>r&#125;&#123;r!&#125; <span class="keyword">\\</span></span><br><span class="line">		<span class="built_in">&amp;</span><span class="keyword">\frac</span>&#123;1&#125;&#123;<span class="keyword">\sqrt</span>&#123;2<span class="keyword">\pi</span>&#125; <span class="keyword">\sigma</span>&#125; e<span class="built_in">^</span>&#123;-<span class="keyword">\frac</span>&#123;(r-<span class="keyword">\mu</span>)<span class="built_in">^</span>2&#125;&#123;2<span class="keyword">\sigma</span> <span class="built_in">^</span>2&#125;&#125;</span><br><span class="line">		<span class="keyword">\end</span>&#123;cases&#125;</span><br><span class="line">	<span class="keyword">\]</span></span><br></pre></td></tr></table></figure></div>
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="E:\MyBlog\source\images\LaTeX Noob Learning\Fig8.png"
+                      alt="Fig8" style="zoom:50%;" 
+                >
+
+<h3 id="6-表格"><a href="#6-表格" class="headerlink" title="6-表格"></a>6-表格</h3><p>可以掌握的是普通线格表格和三线表，还有更多变体表格不在这里介绍。<code>\hline</code>实际上是手动添加横线的过程，不加横线将导致横线缺失。而在<code>\begin&#123;tabular&#125;&#123;|l|c|r|&#125;</code>中的<code>l、c、r</code>指的是其对应列内容的对齐方式，<code>l</code>是左对齐也是不填的默认状态、<code>c</code>是居中、<code>r</code>是右对齐。</p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;tabular&#125;&#123;|l|c|r|&#125;</span><br><span class="line">	<span class="keyword">\hline</span></span><br><span class="line">	<span class="built_in">&amp;</span>Romeo<span class="built_in">&amp;</span>Juliet <span class="keyword">\\</span></span><br><span class="line">	<span class="keyword">\hline</span></span><br><span class="line">	Romeo<span class="built_in">&amp;</span>0<span class="built_in">&amp;</span>1 <span class="keyword">\\</span></span><br><span class="line">	<span class="keyword">\hline</span></span><br><span class="line">	Juliet<span class="built_in">&amp;</span>1<span class="built_in">&amp;</span>0 <span class="keyword">\\</span></span><br><span class="line">	<span class="keyword">\hline</span></span><br><span class="line"><span class="keyword">\end</span>&#123;tabular&#125;</span><br></pre></td></tr></table></figure></div>
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="E:\MyBlog\source\images\LaTeX Noob Learning\Fig9.png"
+                      alt="Fig9" style="zoom:50%;" 
+                >
+
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;table&#125;[!htbp]</span><br><span class="line">	<span class="keyword">\centering</span></span><br><span class="line">	<span class="keyword">\caption</span>&#123;2024听的次数最多的歌&#125;</span><br><span class="line">	<span class="keyword">\begin</span>&#123;tabular&#125;&#123;ccc&#125;</span><br><span class="line">		<span class="keyword">\toprule</span></span><br><span class="line">		<span class="built_in">&amp;</span><span class="keyword">\textbf</span>&#123;歌名&#125;<span class="built_in">&amp;</span><span class="keyword">\textbf</span>&#123;歌手&#125; <span class="keyword">\\</span></span><br><span class="line">		<span class="keyword">\midrule</span></span><br><span class="line">		<span class="keyword">\textbf</span>&#123;top1&#125;<span class="built_in">&amp;</span>《被人》<span class="built_in">&amp;</span>薛之谦 <span class="keyword">\\</span></span><br><span class="line">		<span class="keyword">\textbf</span>&#123;top2&#125;<span class="built_in">&amp;</span>《在银河中孤独摇摆》<span class="built_in">&amp;</span>知更鸟、HOYO-MiX、Chevy <span class="keyword">\\</span></span><br><span class="line">		<span class="keyword">\textbf</span>&#123;top3&#125;<span class="built_in">&amp;</span>《最好》<span class="built_in">&amp;</span>薛之谦 <span class="keyword">\\</span></span><br><span class="line">		<span class="keyword">\bottomrule</span></span><br><span class="line">	<span class="keyword">\end</span>&#123;tabular&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;table&#125;</span><br></pre></td></tr></table></figure></div>
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="E:\MyBlog\source\images\LaTeX Noob Learning\Fig10.png"
+                      alt="Fig10" style="zoom:67%;" 
+                >
+
+<h3 id="7-标签与引用"><a href="#7-标签与引用" class="headerlink" title="7-标签与引用"></a>7-标签与引用</h3><p>该板块放在这里主要是涉及公式的引用，用来直接引用文档内远处的任意公式。当然除了公式，其他表格、图片都是可以被引用的，只需要先给它们指定一个自定义的名称，然后在后文引用就可以了。</p>
+<div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">	<span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">		P(X=r)=<span class="keyword">\frac</span>&#123;1&#125;&#123;<span class="keyword">\sqrt</span>&#123;2<span class="keyword">\pi</span>&#125; <span class="keyword">\sigma</span>&#125; e<span class="built_in">^</span>&#123;-<span class="keyword">\frac</span>&#123;(r-<span class="keyword">\mu</span>)<span class="built_in">^</span>2&#125;&#123;2<span class="keyword">\sigma</span> <span class="built_in">^</span>2&#125;&#125;</span><br><span class="line">	<span class="keyword">\end</span>&#123;equation&#125;</span><br><span class="line"></span><br><span class="line">	我来组成引用部分——(<span class="keyword">\ref</span>&#123;eq:here&#125;)</span><br><span class="line"><span class="comment">%%% eq表示公式，而tab是表、fig是图。</span></span><br><span class="line"><span class="comment">%%% 当前该部分实现仍有一些问题，编译出的引用部分是“(??)”。</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="五-图片展示"><a href="#五-图片展示" class="headerlink" title="五-图片展示"></a>五-图片展示</h2>
+  <div class="note p-4 mb-4 rounded-small danger">
+    <p>Still Under Construction……</p>
+
+  </div>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> LaTeX Noob</li>
+        <li><strong>作者:</strong> Kirschy</li>
+        <li><strong>创建于
+                :</strong> 01-14-2025 00:22:32</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 01-14-2025 01:01:39
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://kirschyr.github.io/2025/01/14/LaTeX/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
+            
+        </li>
+    </ul>
+</div>
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/LaTeX/">#LaTeX</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2025/01/01/hello-world/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">Hello World</span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        评论
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">目录</div>
+		<div class="page-title">LaTeX Noob</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%95%B4%E4%BD%93%E6%A1%86%E6%9E%B6"><span class="nav-text">一、整体框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%A3%B0%E6%98%8E"><span class="nav-text">1-声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%AF%BC%E5%85%A5"><span class="nav-text">2-导入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%8E%AF%E5%A2%83"><span class="nav-text">3-环境</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%AD%A3%E6%96%87%E7%BB%93%E6%9E%84"><span class="nav-text">二、正文结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%A0%87%E9%A2%98"><span class="nav-text">1-标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%AB%A0%E8%8A%82"><span class="nav-text">2-章节</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%88%97%E8%A1%A8"><span class="nav-text">3-列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%9B%AE%E5%BD%95"><span class="nav-text">4-目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E6%8D%A2%E8%A1%8C"><span class="nav-text">5-换行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E9%A1%B5%E6%93%8D%E4%BD%9C"><span class="nav-text">6-页操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E8%BD%AC%E4%B9%89"><span class="nav-text">7-转义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%AD%97%E4%BD%93%E6%98%BE%E7%A4%BA"><span class="nav-text">三、字体显示</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%8A%A0%E7%B2%97"><span class="nav-text">1-加粗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%AD%97%E5%8F%B7"><span class="nav-text">2-字号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%AD%97%E4%BD%93"><span class="nav-text">3-字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%B1%85%E4%B8%AD"><span class="nav-text">4-居中</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%85%AC%E5%BC%8F%E6%98%BE%E7%A4%BA"><span class="nav-text">四、公式显示</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%B8%80%E8%88%AC%E7%AD%89%E5%BC%8F"><span class="nav-text">1-一般等式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%85%AC%E5%BC%8F%E6%8D%A2%E8%A1%8C"><span class="nav-text">2-公式换行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E8%A1%8C%E5%86%85%E5%85%AC%E5%BC%8F"><span class="nav-text">3-行内公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%85%AC%E5%BC%8F%E5%91%BD%E4%BB%A4"><span class="nav-text">4-公式命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%A4%A7%E6%8B%AC%E5%8F%B7"><span class="nav-text">5-矩阵与大括号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E8%A1%A8%E6%A0%BC"><span class="nav-text">6-表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E6%A0%87%E7%AD%BE%E4%B8%8E%E5%BC%95%E7%94%A8"><span class="nav-text">7-标签与引用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94-%E5%9B%BE%E7%89%87%E5%B1%95%E7%A4%BA"><span class="nav-text">五-图片展示</span></a></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
+			</div>
+
+			
+		</div>
+
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2025&nbsp;&nbsp;<i class="far fa-fish" /></i>&nbsp;&nbsp;<a href="/">Kirschy</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        共撰写了 2 篇文章
+                    </span>
+                    
+                        <span>
+                            共 2.3k 字
+                        </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">访问人数</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">总访问量</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a> 驱动</span>
+            <span class="text-sm lg:block">主题&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.8.2</a></span>
+        </div>
+        
+        
+        
+        
+        
+    </div>  
+</footer>
+		</div>
+	</div>
+
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		<!-- rss -->
+		
+
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="fa-regular fa-arrow-up"></i>
+		</li>
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container">
+	<img src="">
+</div>
+
+	
+
+</main>
+
+
+
+<script src="/js/build/libs/Swup.min.js"></script>
+
+<script src="/js/build/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/build/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+	
+<script src="/js/build/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/build/utils.js" type="module"></script>
+
+<script src="/js/build/main.js" type="module"></script>
+
+<script src="/js/build/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/build/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/build/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/build/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/js/build/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/layouts/lazyload.js" type="module"></script>
+
+
+
+
+
+
+  
+<script src="/js/build/libs/Typed.min.js"></script>
+
+  
+<script src="/js/build/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+    
+<script src="/js/build/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/build/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/build/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+
+	
+</body>
+
+</html>
