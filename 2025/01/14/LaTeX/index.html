@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-01-13T16:22:32.000Z">
-<meta property="article:modified_time" content="2025-01-13T17:09:53.299Z">
+<meta property="article:modified_time" content="2025-01-13T17:18:19.803Z">
 <meta property="article:author" content="Redefine Team">
 <meta property="article:tag" content="LaTeX">
 <meta name="twitter:card" content="summary">
@@ -500,8 +500,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">01-14-2025 01:09:53</span>
-            <span class="mobile">01-14-2025 01:09:53</span>
+            <span class="desktop">01-14-2025 01:18:19</span>
+            <span class="mobile">01-14-2025 01:18:19</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -523,7 +523,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2.3k 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2.2k 字</span>
         </span>
     
     
@@ -564,16 +564,31 @@
 
 <h2 id="二、正文结构"><a href="#二、正文结构" class="headerlink" title="二、正文结构"></a>二、正文结构</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1-标题"></a>1-标题</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\title</span>&#123;这是标题<span class="keyword">\LaTeX</span>&#125;</span><br><span class="line"><span class="keyword">\author</span>&#123;Kirschy&#125;</span><br><span class="line"><span class="keyword">\date</span>&#123;01-13-2025&#125;</span><br><span class="line"><span class="keyword">\maketitle</span></span><br></pre></td></tr></table></figure></div>
 
-<p>![Fig1](&#x2F;images&#x2F;LaTeX Noob Learning&#x2F;Fig1.png)</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/LaTeX_Noob_Learning/Fig1.png"
+                      alt="Fig1"
+                ></p>
 <p>实际上，<code>\LaTeX</code>是LaTeX在编译时会被识别的一个特殊符号，最后渲染结果如上图。如果在其之后还要写东西，一定注意给一个空格！</p>
 <h3 id="2-章节"><a href="#2-章节" class="headerlink" title="2-章节"></a>2-章节</h3><p>层次分明：分章节过程中最多无脑两次sub，如果继续往下分段则是<code>\paragraph</code>。<code>\paragraph</code>的作用仅仅是另起一段并且在开头添加了指定内容的粗体段标题。后面的文字会紧跟小标题，不会像section一样另起一段。</p>
 <div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Hello World!</span><br><span class="line"></span><br><span class="line"><span class="keyword">\section</span>&#123;<span class="keyword">\LaTeX</span> 的使用&#125;</span><br><span class="line">Do you know how to use <span class="keyword">\LaTeX</span> quickly?</span><br><span class="line"></span><br><span class="line"><span class="keyword">\subsection</span>&#123;<span class="keyword">\LaTeX</span> 的基本知识&#125;</span><br><span class="line">Here we&#x27;d like to introduce some basic information.</span><br><span class="line"></span><br><span class="line"><span class="keyword">\subsubsection</span>&#123;<span class="keyword">\LaTeX</span> 的结构&#125;</span><br><span class="line">The <span class="keyword">\LaTeX</span> &#x27;s special frame decides its wide use.</span><br><span class="line"></span><br><span class="line"><span class="keyword">\paragraph</span>&#123;Para 1&#125;In this first paragraph.</span><br><span class="line"></span><br><span class="line"><span class="keyword">\paragraph</span>&#123;Para 2&#125;Comes the paragraph2.</span><br></pre></td></tr></table></figure></div>
 
-<p>![Fig2](&#x2F;images&#x2F;LaTeX Noob Learning&#x2F;Fig2.png)</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/LaTeX_Noob_Learning/Fig2.png"
+                      alt="Fig2"
+                ></p>
 <h3 id="3-列表"><a href="#3-列表" class="headerlink" title="3-列表"></a>3-列表</h3><p>写法结构类似于document，需要一对begin+end把内容包起来。</p>
 <div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;enumerate&#125;</span><br><span class="line"><span class="keyword">\item</span> 这是第一条</span><br><span class="line"><span class="keyword">\item</span> 我是第二条</span><br><span class="line"><span class="keyword">\item</span> 我是奶龙</span><br><span class="line"><span class="keyword">\item</span> 我才是奶龙</span><br><span class="line"><span class="keyword">\end</span>&#123;enumerate&#125; <span class="comment">%enumerate是枚举的意思，即列表效果</span></span><br></pre></td></tr></table></figure></div>
 
-<p>![Fig3](&#x2F;images&#x2F;LaTeX Noob Learning&#x2F;Fig3.png)</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/LaTeX_Noob_Learning/Fig3.png"
+                      alt="Fig3"
+                ></p>
 <h3 id="4-目录"><a href="#4-目录" class="headerlink" title="4-目录"></a>4-目录</h3><p>使用<code>\tableofcontents</code>就可以自动解析文章的section与列表，动态标号直接生成一个目录。会要求运行两次，第一次是加载，第二次才会显示新增的条目。</p>
 <h3 id="5-换行"><a href="#5-换行" class="headerlink" title="5-换行"></a>5-换行</h3><p>类似于markdown，代码里面的内容间隔一个空行才能在最后渲染的时候出来一个换行：</p>
 <div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line">	第一行</span><br><span class="line"></span><br><span class="line">	第二行</span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure></div>
@@ -590,7 +605,12 @@
 <div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\&#123;</span>我用了这两个反斜杠就能让大括号被正常显示了<span class="keyword">\&#125;</span></span><br></pre></td></tr></table></figure></div>
 
 <p>如果要显示反斜杠怎么办？稍微麻烦——<code>\verb|\|</code>，这样两个管道符中间的反斜杠就会显示出来。</p>
-<p>![Fig4](&#x2F;images&#x2F;LaTeX Noob Learning&#x2F;Fig4.png)</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/LaTeX_Noob_Learning/Fig4.png"
+                      alt="Fig4"
+                ></p>
 <h2 id="三、字体显示"><a href="#三、字体显示" class="headerlink" title="三、字体显示"></a>三、字体显示</h2><h3 id="1-加粗"><a href="#1-加粗" class="headerlink" title="1-加粗"></a>1-加粗</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\textbf</span>&#123;这个样子能让大括号里的内容变成加粗黑体&#125;</span><br></pre></td></tr></table></figure></div>
 
 <h3 id="2-字号"><a href="#2-字号" class="headerlink" title="2-字号"></a>2-字号</h3><p>有好几个等级，对应不同的名称。</p>
@@ -601,7 +621,12 @@
 <h3 id="4-居中"><a href="#4-居中" class="headerlink" title="4-居中"></a>4-居中</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;center&#125;</span><br><span class="line">	<span class="comment">%%%内容</span></span><br><span class="line"><span class="keyword">\end</span>&#123;center&#125;</span><br></pre></td></tr></table></figure></div>
 
 <p>下面用一张图把上面的内容囊括一下，字体似乎有点小问题：</p>
-<p>![Fig5](&#x2F;images&#x2F;LaTeX Noob Learning&#x2F;Fig5.png)</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/LaTeX_Noob_Learning/Fig5.png"
+                      alt="Fig5"
+                ></p>
 <h2 id="四、公式显示"><a href="#四、公式显示" class="headerlink" title="四、公式显示"></a>四、公式显示</h2><h3 id="1-一般等式"><a href="#1-一般等式" class="headerlink" title="1-一般等式"></a>1-一般等式</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">	2=1+1 <span class="keyword">\notag</span></span><br><span class="line"><span class="keyword">\end</span>&#123;equation&#125;</span><br></pre></td></tr></table></figure></div>
 
 <p><code>\notag</code>是用来声明隐藏公式后面的标号的，如果不声明，公式后面会有自动动态标号。无标号公式还有几种写法，提供在下面：</p>
@@ -612,7 +637,12 @@
 
 <p>另外还要注意上面<code>\notag</code>的位置，是让第一行的公式不显示标号，而第二行仍然会有。而<code>&amp;</code>符号的作用就是实现不同行的公式在最左端实现对齐。</p>
 <p>&#x3D;&#x3D;WARNING！&#x3D;&#x3D;align环境需要由amsmath环境支持，一定记得在文前导入包的时候写入！</p>
-<p>![Fig6](&#x2F;images&#x2F;LaTeX Noob Learning&#x2F;Fig6.png)</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/LaTeX_Noob_Learning/Fig6.png"
+                      alt="Fig6"
+                ></p>
 <h3 id="3-行内公式"><a href="#3-行内公式" class="headerlink" title="3-行内公式"></a>3-行内公式</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\paragraph</span>&#123;On in-line formulas&#125;</span><br><span class="line">众所周知，<span class="built_in">$</span>together=to+get+her<span class="built_in">$</span>;</span><br><span class="line">或者也有人说现在最好用这种：<span class="keyword">\(</span>a<span class="built_in">^</span>2+b<span class="built_in">^</span>2=c<span class="built_in">^</span>2<span class="keyword">\)</span>;</span><br><span class="line">有点像行间公式可以用<span class="keyword">\[</span><span class="keyword">\]</span>的写法，而不能用<span class="built_in">$</span><span class="built_in">$</span> <span class="built_in">$</span><span class="built_in">$</span>来代替。</span><br></pre></td></tr></table></figure></div>
 
 <h3 id="4-公式命令"><a href="#4-公式命令" class="headerlink" title="4-公式命令"></a>4-公式命令</h3><p>其实上面写欧拉公式涉及到一些，下面给出详细的列表：（以及我自己的练手）。或许大写都是类似于<code>\Delta</code>那样的放大首字母的操作。</p>
@@ -664,18 +694,38 @@
 <td>\sigma</td>
 </tr>
 </tbody></table>
-<p>![Fig7](&#x2F;images&#x2F;LaTeX Noob Learning&#x2F;Fig7.png)</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/LaTeX_Noob_Learning/Fig7.png"
+                      alt="Fig7"
+                ></p>
 <h3 id="5-矩阵与大括号"><a href="#5-矩阵与大括号" class="headerlink" title="5-矩阵与大括号"></a>5-矩阵与大括号</h3><p>矩阵的构建需要提前导入宏包<code>mathtools</code>，经过两层声明。无论是矩阵的<code>bmatrix</code>还是大括号的<code>cases</code>都只能放在<code>equation</code>环境里。</p>
 <div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%%%矩阵</span></span><br><span class="line">	<span class="keyword">\[</span></span><br><span class="line">		A=<span class="keyword">\begin</span>&#123;bmatrix&#125;</span><br><span class="line">		1<span class="built_in">&amp;</span>2<span class="built_in">&amp;</span>3 <span class="keyword">\\</span></span><br><span class="line">		4<span class="built_in">&amp;</span>5<span class="built_in">&amp;</span>6</span><br><span class="line">		<span class="keyword">\end</span>&#123;bmatrix&#125;</span><br><span class="line">	<span class="keyword">\]</span></span><br><span class="line"><span class="comment">%%%大括号</span></span><br><span class="line">	<span class="keyword">\[</span></span><br><span class="line">		P(X=r)=<span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line">		<span class="built_in">&amp;</span><span class="keyword">\frac</span>&#123;e<span class="built_in">^</span>&#123;-<span class="keyword">\lambda</span>&#125;<span class="keyword">\lambda</span> <span class="built_in">^</span>r&#125;&#123;r!&#125; <span class="keyword">\\</span></span><br><span class="line">		<span class="built_in">&amp;</span><span class="keyword">\frac</span>&#123;1&#125;&#123;<span class="keyword">\sqrt</span>&#123;2<span class="keyword">\pi</span>&#125; <span class="keyword">\sigma</span>&#125; e<span class="built_in">^</span>&#123;-<span class="keyword">\frac</span>&#123;(r-<span class="keyword">\mu</span>)<span class="built_in">^</span>2&#125;&#123;2<span class="keyword">\sigma</span> <span class="built_in">^</span>2&#125;&#125;</span><br><span class="line">		<span class="keyword">\end</span>&#123;cases&#125;</span><br><span class="line">	<span class="keyword">\]</span></span><br></pre></td></tr></table></figure></div>
 
-<p>![Fig8](&#x2F;images&#x2F;LaTeX Noob Learning&#x2F;Fig8.png)</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/LaTeX_Noob_Learning/Fig8.png"
+                      alt="Fig8"
+                ></p>
 <h3 id="6-表格"><a href="#6-表格" class="headerlink" title="6-表格"></a>6-表格</h3><p>可以掌握的是普通线格表格和三线表，还有更多变体表格不在这里介绍。<code>\hline</code>实际上是手动添加横线的过程，不加横线将导致横线缺失。而在<code>\begin&#123;tabular&#125;&#123;|l|c|r|&#125;</code>中的<code>l、c、r</code>指的是其对应列内容的对齐方式，<code>l</code>是左对齐也是不填的默认状态、<code>c</code>是居中、<code>r</code>是右对齐。</p>
 <div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;tabular&#125;&#123;|l|c|r|&#125;</span><br><span class="line">	<span class="keyword">\hline</span></span><br><span class="line">	<span class="built_in">&amp;</span>Romeo<span class="built_in">&amp;</span>Juliet <span class="keyword">\\</span></span><br><span class="line">	<span class="keyword">\hline</span></span><br><span class="line">	Romeo<span class="built_in">&amp;</span>0<span class="built_in">&amp;</span>1 <span class="keyword">\\</span></span><br><span class="line">	<span class="keyword">\hline</span></span><br><span class="line">	Juliet<span class="built_in">&amp;</span>1<span class="built_in">&amp;</span>0 <span class="keyword">\\</span></span><br><span class="line">	<span class="keyword">\hline</span></span><br><span class="line"><span class="keyword">\end</span>&#123;tabular&#125;</span><br></pre></td></tr></table></figure></div>
 
-<p>![Fig9](&#x2F;images&#x2F;LaTeX Noob Learning&#x2F;Fig9.png)</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/LaTeX_Noob_Learning/Fig9.png"
+                      alt="Fig9"
+                ></p>
 <div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;table&#125;[!htbp]</span><br><span class="line">	<span class="keyword">\centering</span></span><br><span class="line">	<span class="keyword">\caption</span>&#123;2024听的次数最多的歌&#125;</span><br><span class="line">	<span class="keyword">\begin</span>&#123;tabular&#125;&#123;ccc&#125;</span><br><span class="line">		<span class="keyword">\toprule</span></span><br><span class="line">		<span class="built_in">&amp;</span><span class="keyword">\textbf</span>&#123;歌名&#125;<span class="built_in">&amp;</span><span class="keyword">\textbf</span>&#123;歌手&#125; <span class="keyword">\\</span></span><br><span class="line">		<span class="keyword">\midrule</span></span><br><span class="line">		<span class="keyword">\textbf</span>&#123;top1&#125;<span class="built_in">&amp;</span>《被人》<span class="built_in">&amp;</span>薛之谦 <span class="keyword">\\</span></span><br><span class="line">		<span class="keyword">\textbf</span>&#123;top2&#125;<span class="built_in">&amp;</span>《在银河中孤独摇摆》<span class="built_in">&amp;</span>知更鸟、HOYO-MiX、Chevy <span class="keyword">\\</span></span><br><span class="line">		<span class="keyword">\textbf</span>&#123;top3&#125;<span class="built_in">&amp;</span>《最好》<span class="built_in">&amp;</span>薛之谦 <span class="keyword">\\</span></span><br><span class="line">		<span class="keyword">\bottomrule</span></span><br><span class="line">	<span class="keyword">\end</span>&#123;tabular&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;table&#125;</span><br></pre></td></tr></table></figure></div>
 
-<p>![Fig10](&#x2F;images&#x2F;LaTeX Noob Learning&#x2F;Fig10.png)</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/LaTeX_Noob_Learning/Fig10.png"
+                      alt="Fig10"
+                ></p>
 <h3 id="7-标签与引用"><a href="#7-标签与引用" class="headerlink" title="7-标签与引用"></a>7-标签与引用</h3><p>该板块放在这里主要是涉及公式的引用，用来直接引用文档内远处的任意公式。当然除了公式，其他表格、图片都是可以被引用的，只需要先给它们指定一个自定义的名称，然后在后文引用就可以了。</p>
 <div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">	<span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">		P(X=r)=<span class="keyword">\frac</span>&#123;1&#125;&#123;<span class="keyword">\sqrt</span>&#123;2<span class="keyword">\pi</span>&#125; <span class="keyword">\sigma</span>&#125; e<span class="built_in">^</span>&#123;-<span class="keyword">\frac</span>&#123;(r-<span class="keyword">\mu</span>)<span class="built_in">^</span>2&#125;&#123;2<span class="keyword">\sigma</span> <span class="built_in">^</span>2&#125;&#125;</span><br><span class="line">	<span class="keyword">\end</span>&#123;equation&#125;</span><br><span class="line"></span><br><span class="line">	我来组成引用部分——(<span class="keyword">\ref</span>&#123;eq:here&#125;)</span><br><span class="line"><span class="comment">%%% eq表示公式，而tab是表、fig是图。</span></span><br><span class="line"><span class="comment">%%% 当前该部分实现仍有一些问题，编译出的引用部分是“(??)”。</span></span><br></pre></td></tr></table></figure></div>
 
@@ -698,7 +748,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 01-14-2025 01:09:53
+                    :</strong> 01-14-2025 01:18:19
             </li>
         
         <li>
@@ -835,7 +885,7 @@
                     </span>
                     
                         <span>
-                            共 2.4k 字
+                            共 2.3k 字
                         </span>
                     
                 </p>
