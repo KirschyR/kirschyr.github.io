@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-01-13T16:22:32.000Z">
-<meta property="article:modified_time" content="2025-01-14T02:35:22.013Z">
+<meta property="article:modified_time" content="2025-01-14T02:37:42.866Z">
 <meta property="article:author" content="Redefine Team">
 <meta property="article:tag" content="LaTeX">
 <meta name="twitter:card" content="summary">
@@ -504,8 +504,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">01-14-2025 10:35:22</span>
-            <span class="mobile">01-14-2025 10:35:22</span>
+            <span class="desktop">01-14-2025 10:37:42</span>
+            <span class="mobile">01-14-2025 10:37:42</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -674,7 +674,7 @@
 <div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">	<span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">		8=5+3 <span class="keyword">\\</span></span><br><span class="line">		13=8+5</span><br><span class="line">	<span class="keyword">\end</span>&#123;equation&#125;</span><br><span class="line"><span class="comment">% 上面的写法就是错的，不能达到预期效果，应该这么写————</span></span><br><span class="line">	<span class="keyword">\begin</span>&#123;align&#125;</span><br><span class="line">		<span class="built_in">&amp;</span>21=13+8 <span class="keyword">\notag</span> <span class="keyword">\\</span></span><br><span class="line">		<span class="built_in">&amp;</span>34=21+13</span><br><span class="line">	<span class="keyword">\end</span>&#123;align&#125;</span><br></pre></td></tr></table></figure></div>
 
 <p>另外还要注意上面<code>\notag</code>的位置，是让第一行的公式不显示标号，而第二行仍然会有。而<code>&amp;</code>符号的作用就是实现不同行的公式在最左端实现对齐。</p>
-<p>&#x3D;&#x3D;WARNING！&#x3D;&#x3D;align环境需要由amsmath环境支持，一定记得在文前导入包的时候写入！</p>
+<p><strong>WARNING！</strong>align环境需要由amsmath宏包支持，一定记得在文前导入包的时候写入！</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
@@ -785,7 +785,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 01-14-2025 10:35:22
+                    :</strong> 01-14-2025 10:37:42
             </li>
         
         <li>
