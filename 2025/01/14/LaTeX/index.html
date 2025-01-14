@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-01-13T16:22:32.000Z">
-<meta property="article:modified_time" content="2025-01-14T01:06:04.523Z">
+<meta property="article:modified_time" content="2025-01-14T02:01:20.807Z">
 <meta property="article:author" content="Redefine Team">
 <meta property="article:tag" content="LaTeX">
 <meta name="twitter:card" content="summary">
@@ -504,8 +504,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">01-14-2025 09:06:04</span>
-            <span class="mobile">01-14-2025 09:06:04</span>
+            <span class="desktop">01-14-2025 10:01:20</span>
+            <span class="mobile">01-14-2025 10:01:20</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -527,12 +527,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2.5k 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>3.3k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>10 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>12 分钟</span>
         </span>
     
     
@@ -553,7 +553,7 @@
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
 			<p>在VSCode上配置TexLive简直是一大难事（花费一上午的时间），此后博主又花了一下午的时间慢慢消化LaTeX的一些基础知识，本文基本都是参考<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43301333/article/details/106365391" >该篇CSDN<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>所作，然而也正是”基础知识“，该文章后续将会视使用情况持续更新。</p>
 <p>L^A^T<del>E</del>X作为一种文本标记语言，尽管非所见即所得，但其在正式的排版体系中所展示出的优越性以及其之后必然愈发突出的工具属性，更让博主认为有学习LaTeX的必要（或者说只是接触早晚的事）。工具性质知识的学习一定是比博物性质知识的学习更加重要的。</p>
-<p>Ok, here we go.</p>
+<p>Okay, here we go.</p>
 <h2 id="一、整体框架"><a href="#一、整体框架" class="headerlink" title="一、整体框架"></a>一、整体框架</h2><h3 id="1-声明"><a href="#1-声明" class="headerlink" title="1.声明"></a>1.声明</h3><p>文章的最开始，我要写一篇文章：<code>documentclass[UTF8]&#123;ctexart&#125;</code>。</p>
 <p>中括号是文章编码。</p>
 <blockquote>
@@ -567,13 +567,37 @@
 <li><strong>pdflatex-&gt;bibtex-&gt;pdflatex*2</strong>：与上同理，完全看文档内容字符的编码需求。</li>
 </ol>
 </blockquote>
-<p>花括号是文章类型：cte宏包本身就提供了很多类型，而且如果在文档开头直接声明文章类型是cte宏包中的类型，则在后续不需要再用<code>\usepackages&#123;ctex&#125;</code>来说明需要导入ctex宏包了。</p>
+<p>花括号是文章类型：ctex宏包本身就提供了很多类型（核心是支持中文），而且如果在文档开头直接声明文章类型是ctex宏包中的类型，则在后续不需要再用<code>\usepackages&#123;ctex&#125;</code>来说明需要导入ctex宏包了。</p>
 <blockquote>
+<ol>
+<li><strong>article</strong>：最常用的文档类型之一，适用于撰写短篇文章（论文、报告、笔记），不支持章节命令（<code>chapter</code>），通常用于单栏格式的文档。ctex中变型为ctexart。</li>
+<li><strong>report</strong>：与article类似，但是还支持章节结构，因此适用于撰写长篇报告或简单书籍，通常用于双面打印，可以包含目录。ctex中变型为ctexrep。</li>
+<li><strong>book</strong>：支持章节以及更加复杂的结构（包括前言-正文-后记、复杂的目录与索引之类），适用于撰写书籍。适合双面打印。</li>
+<li><strong>proc</strong>：基于article文档类的一个简单学术文档模板，通常用于会议论文集。ctex中变型为ctexproc。</li>
+<li><strong>slides</strong>：幻灯片演示文稿文档类，使用无衬线字体（字符笔画粗细一致）。</li>
+<li><strong>beamer</strong>：幻灯片演示文稿文档类，但是提供更多选项来定制外观、布局之类。</li>
+<li><strong>minimal</strong>：精简文档类，仅设定纸张大小和基本字号，用作代码测试的最小工作示例。</li>
+<li><strong>letter</strong>：撰写信件的文档类，提供信件的格式与布局。</li>
+</ol>
 </blockquote>
 <h3 id="2-导入"><a href="#2-导入" class="headerlink" title="2.导入"></a>2.导入</h3><p>说明要开始写文章，导入一些写文章的时候会用到的东西。可以单行导入多个宏，也可以分开写。</p>
 <div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;setspace,lipsum&#125;</span><br><span class="line"><span class="comment">% or</span></span><br><span class="line"><span class="keyword">\usepackage</span>&#123;setspace&#125;</span><br><span class="line"><span class="keyword">\usepackage</span>&#123;lipsum&#125;</span><br></pre></td></tr></table></figure></div>
 
-<h3 id="3-环境"><a href="#3-环境" class="headerlink" title="3.环境"></a>3.环境</h3><p>包含了文章的内容：</p>
+<p>在这里简单介绍一下一些常用的宏包：</p>
+<blockquote>
+<ol>
+<li><strong>setspace</strong>：用于调整文档中行距。有单倍行距（<code>\singlespacing</code>）、双倍行距（<code>\doublespacing</code>）与自定义行距（<code>\onehalfspacing</code>）。</li>
+<li><strong>lipsum</strong>：“随机”生成填充文本，通常用于设计与排版过程中，用于模拟实际文本的外观布局。</li>
+<li><strong>amsmath</strong>：提供数学公式排版的增强功能，用于支持多行公式、对齐公式、数学环境、新数学符号与命令。</li>
+<li><strong>mathtools</strong>：是<code>amsmath</code>宏包的拓展，排版精细化，更多功能。</li>
+<li><strong>booktabs</strong>：用于改进表格中线条，在三线表中使用（分别的三线命名代替传统的<code>\hline</code>）。</li>
+<li><strong>microtypes</strong>：提供“微排版”功能，改进字符与单词间距，进行字体、行距等的微调。</li>
+<li><strong>graphicx</strong>：用于处理图片的插入，支持多种图片格式，支持调整图片大小、旋转与裁剪等等。</li>
+<li>……</li>
+</ol>
+</blockquote>
+<p>如果编译返回某一宏包不存在，则需要手动在<code>Start+r</code>的cmd命令行界面输入指令<code>tlmgr install [宏包名称]</code>，加载好后再编辑即可。如果要求的某一宏包并不存在于<a target="_blank" rel="noopener" href="https://ctan.org/"><strong>CTAN</strong></a>（Comprehensive Tex Archive Network，Tex综合档案网络。不存在会导致命令行运行失败），则需要在网络上寻找第三方资源，将对应<code>.sty</code>文件放在<code>texlive\2024\texmf-dist\tex\latex</code>路径下同名文件夹中，详细操作过程<a class="link"   target="_blank" rel="noopener" href="https://www.jianshu.com/p/08fa4d894ca5" >可以参考<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>。</p>
+<h3 id="3-环境"><a href="#3-环境" class="headerlink" title="3.环境"></a>3.环境</h3><p>包含了文章的内容：（类似地，任何<code>\begin&#123;xxx&#125;……\end&#123;xxx&#125;</code>所圈的地都可以算作一个小环境）</p>
 <div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line">	<span class="comment">% 正文</span></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure></div>
 
 <h2 id="二、正文结构"><a href="#二、正文结构" class="headerlink" title="二、正文结构"></a>二、正文结构</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h3><div class="code-container" data-rel="Latex"><figure class="iseeu highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\title</span>&#123;这是标题<span class="keyword">\LaTeX</span>&#125;</span><br><span class="line"><span class="keyword">\author</span>&#123;Kirschy&#125;</span><br><span class="line"><span class="keyword">\date</span>&#123;01-13-2025&#125;</span><br><span class="line"><span class="keyword">\maketitle</span></span><br></pre></td></tr></table></figure></div>
@@ -693,7 +717,6 @@
 <th>π</th>
 <th>ε</th>
 <th>ρ</th>
-<th>σ</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -705,9 +728,9 @@
 <td>\pi</td>
 <td>\epsilon</td>
 <td>\rho</td>
-<td>\sigma</td>
 </tr>
 </tbody></table>
+<p>实际上无论是公式命令还是希腊字母，在vscode的编辑界面中都有快捷选取栏，对记忆上面这些东西的要求不大。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
@@ -745,7 +768,7 @@
 
 <h2 id="五-图片展示"><a href="#五-图片展示" class="headerlink" title="五-图片展示"></a>五-图片展示</h2>
   <div class="note p-4 mb-4 rounded-small danger icon-padding">
-    <i class="note-icon fa-solid fa-exclamation"></i><p>Still Under Construction……</p>
+    <i class="note-icon fa-solid fa-exclamation-circle"></i><p>Still Under Construction……</p>
 
   </div>
 
@@ -762,7 +785,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 01-14-2025 09:06:04
+                    :</strong> 01-14-2025 10:01:20
             </li>
         
         <li>
@@ -899,7 +922,7 @@
                     </span>
                     
                         <span>
-                            共 2.6k 字
+                            共 3.3k 字
                         </span>
                     
                 </p>
