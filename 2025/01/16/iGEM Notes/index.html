@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-01-15T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-01-18T06:46:20.541Z">
+<meta property="article:modified_time" content="2025-01-19T16:28:38.117Z">
 <meta property="article:author" content="Redefine Team">
 <meta property="article:tag" content="iGEM">
 <meta name="twitter:card" content="summary">
@@ -605,8 +605,8 @@ mjx-container[display="true"] + br {
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">01-18-2025 14:46:20</span>
-            <span class="mobile">01-18-2025 14:46:20</span>
+            <span class="desktop">01-20-2025 00:28:38</span>
+            <span class="mobile">01-20-2025 00:28:38</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -628,12 +628,12 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2.1k 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>3.2k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>8 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>12 分钟</span>
         </span>
     
     
@@ -691,7 +691,7 @@ mjx-container[display="true"] + br {
 <p>2000年后，基因组学、生信、系统生物学的发展开启了合成生物学时代——基于系统生物学的遗传工程。基因线路、人工染色体&amp;细胞器、细胞与多细胞体系、人工生物系统的定量表征&amp;模拟。</p>
 <blockquote>
 <p>Synthetic Repressilator：生物振荡系统。</p>
-<p>Collective synchronization: 基于细胞通讯的同步化振荡。</p>
+<p>Collective synchronization: 基于细胞通讯的同步化振荡，群体振荡。</p>
 <p>Toggle switch: 双稳开关（t触发、溶原裂解转化）。</p>
 </blockquote>
 <p>感受内外源信号→信号处理→决策制定→多输入输出→动态环境适应。</p>
@@ -727,6 +727,109 @@ mjx-container[display="true"] + br {
 <p>蛋白质设计思路：突变、定向进化、<em>de novo</em> design从头设计、”模块化”结构域重组。锌指蛋白是第一个利用程序辅助设计的全新蛋白实例。</p>
 <p>Challenges: computational and experimental demanding, low accuracy, conformational changes upon binding（构象变化）.</p>
 <p>Synthetic protein scaffolds provide modular control over metabolic flux.</p>
+<h2 id="5-DNA组装技术-分子克隆"><a href="#5-DNA组装技术-分子克隆" class="headerlink" title="5. DNA组装技术/分子克隆"></a>5. DNA组装技术/分子克隆</h2><p>独立于染色体之外的DNA。哺乳动物细胞中极少数质粒可以复制。</p>
+<p>promoter、selectable marker、antibiotic resistance gene、origin of replication.</p>
+<p>退火温度根据引物与模板的结合能选择。根据酶的合成速度来判定延伸时间，延伸太久有可能会有非特异性位点产生。</p>
+<p><strong>限制性内切酶</strong>：sticky end and blunt end. 同尾酶(isocaudamer): 识别位点不同，切出粘性末端相同。</p>
+<p>感受态transformation：**低温氯化钙(进入感受态)+42℃×2min(退出感受态)**。</p>
+<p>基因工程的第一个成功案例1983-human insulin from recombinant DNA technology</p>
+<p><strong>Biobrick</strong>：常用同尾酶方法。是符合是符合限制性内切酶组装标准的DNA序列。这些构建块用于从单个部件和具有定义功能的部件组合中设计和组装更大的合成生物回路，然后将其整合到活细胞中以构建新的生物系统。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/biobrick.svg.png" alt="BioBrick"></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/standard_assembly_10.jpg" alt="standard_assembly_10"></p>
+<p>不同同尾酶混合位点形成一个<strong>“scar”</strong>，因为不能再被切割。如果想形成一个融合蛋白，需要考虑scar被翻译成氨基酸对蛋白功能可能造成的影响。而如果是引入<strong>柔性氨基酸（Gly&amp;Ser）</strong>，则对融合蛋白的两个部分影响较小。</p>
+<p><strong>Golden Gates</strong>：利用II类限制性内切酶，识别序列在切割位点之外。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/goldengate1.png"></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/goldengate2.png"></p>
+<p>不基于限制性内切酶的方法：circular polymerase extension cloning (<strong>CPEC</strong>)、sequence and ligation-independent cloning (<strong>SLIC</strong>)、<strong>Gibson</strong> (in vitro)、<strong>Yeast TAR</strong> (in vivo).</p>
+<blockquote>
+<p><strong>CPEC</strong>: 类似于PCR，效率低，最后连接是在菌体内进行。</p>
+<p><strong>LIC</strong>: T4 DNAP，只加对应dNTP可以让聚合酶停留在对应特异位点，还是靠粘性末端靠在一起。</p>
+<p><strong>Gibson</strong>: 对PCR产生的平末端片段进行外切（T5外切酶），创造粘性末端（末端overlap一小段序列相同），Taq补上缺失部分。一个体系里三个酶即可完成（Phusion DNAP + Taq ligase + T5 exonuclease）。overlap 20~60nt，连接片段30~50kb，大于8个片段轻松carry。</p>
+<p><strong>Yeast TAR</strong>: 特大片段重组时更常见。直接把大序列片段放到酵母细胞里，让其打工连上。错误率高，那就筛选罢。</p>
+</blockquote>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/gibson.png" alt="gibson"></p>
+<details class="blue" data-header-exclude=""><summary><i class="fa-solid fa-chevron-right"></i>图解另外几个不常用非限制性内切酶克隆方法 </summary>
+              <div class="content">
+              <p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/cpec.png" alt="cpec"></p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/lic.png" alt="lic"></p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/slic.png" alt="slic"></p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/yeast_tar.png" alt="yeast_tar"></p>
+              </div>
+            </details>
+
+<p>另外还有<strong>整合酶方法</strong>（in vitro site-specific recombination）、<strong>LCR</strong>（ligase cycling reaction，自己做个”小胶带“）。</p>
+<details class="blue" data-header-exclude=""><summary><i class="fa-solid fa-chevron-right"></i>余项补充 </summary>
+              <div class="content">
+              <p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/integrase.png" alt="integrase"></p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/lcr.png" alt="lcr"></p>
+              </div>
+            </details>
+
+<p>最后是总结：</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/summary.png"></p>
+<h2 id="6-1-生物网络设计-基因线路"><a href="#6-1-生物网络设计-基因线路" class="headerlink" title="6.1 生物网络设计-基因线路"></a>6.1 生物网络设计-基因线路</h2><p><strong>Logic Gates</strong>、<strong>Oscillator</strong>、<strong>Pattern Formation (Turing)</strong>.</p>
+<p>Eg-<strong>AND</strong>: 单独蓝色和绿色表达都会让灰色输出，最后无YFP，只有蓝色和绿色都未表达才会表达出YFP。（有点像很多红石火把）</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/and_gate.png"></p>
+<p>真值表，根据输入来得到不同输出的16种逻辑门。小圈是not进行取反。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/logic_gates.png"></p>
+<p>布尔代数的基本算符——AND(与门)、OR(或门)、NOT(非门)、NAND(与非门)、NOR(或非门)、XOR(异或门)、XNOR(同或门)。</p>
+<table>
+<thead>
+<tr>
+<th>基本算符</th>
+<th>记作</th>
+<th>Eg</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AND</td>
+<td>+</td>
+<td>a+b</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>·</td>
+<td>a·b</td>
+</tr>
+<tr>
+<td>NOT</td>
+<td>‘</td>
+<td>a’</td>
+</tr>
+<tr>
+<td>NAND</td>
+<td>()’</td>
+<td>(ab)’=a’+b’</td>
+</tr>
+<tr>
+<td>NOR</td>
+<td>()’</td>
+<td>(a+b)’=a’b’</td>
+</tr>
+<tr>
+<td>XOR</td>
+<td>(+)</td>
+<td>a(+)b=a’b+ab’</td>
+</tr>
+<tr>
+<td>XNOR</td>
+<td>((+))’</td>
+<td>(a(+)b)’=a’b’+ab</td>
+</tr>
+</tbody></table>
+<p>根据实际情况给出真值表（各开关离散状态枚举）👉将真值表变为布尔代数逻辑表达式👉布尔代数式的电路表示。</p>
+<p>实际中最后才是用实际的启动子-终止子-整合酶等等设计出实际的逻辑门基因线路。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/biologic_gates.png" alt="biologic_gates"></p>
+<blockquote>
+<p>Memory: Bistable switch (双稳开关，参见裂解溶原转换).</p>
+<p><strong>Recommendation</strong>: Programming a Pavlovian-like conditioning circuit in <em>Escherichia coli</em>.</p>
+</blockquote>
+<p>这里也给出图灵斑图的形成模式：</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/turing_pattern.png" alt="turing_pattern"></p>
+<h2 id="6-2-生物网络设计-信号网络"><a href="#6-2-生物网络设计-信号网络" class="headerlink" title="6.2 生物网络设计-信号网络"></a>6.2 生物网络设计-信号网络</h2><p><strong>Toggle switch</strong>, <strong>Quorum sensing</strong>, <strong>Oscillator</strong>, <strong>Engineered Scaffold</strong>, <strong>Polarization</strong>, <strong>Synthetic MAPK</strong>.</p>
+<p>Oscillator: Cell cycle, Circadian clock, Repressilator. 抽象出简化模型。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/repressilator_examples.png" alt="repressilators"></p>
+<p>网络工作模型及其应用：<strong>正反馈</strong>→双稳态+记忆；<strong>负反馈</strong>→限制输出水平和输出时间+增加输出水平准确性+适应+振荡而不鲁棒；<strong>内联正负反馈</strong>（interlinked positive/negative feedback）→鲁棒性、可调振荡频率；<strong>内联多重正反馈</strong>（interlinked, multiple positive feedback）→增强同步化，准确转变；<strong>一致前馈</strong>（feed-forward, coherent）：延迟/筛选稳定输入；<strong>不一致前馈</strong>（feed-forward, incoherent）：暂停反应，适应。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/network_model.png" alt="network_model"></p>
+<p>Fan in（多对一）、Fan out（一对多）。</p>
+<p>激酶作用：构象改变、互作、降解、定位。</p>
+<p>IOQ：ultrasensitive（超敏，有一个input-output急剧上升的阶段）</p>
 
 		</div>
 
@@ -741,7 +844,7 @@ mjx-container[display="true"] + br {
         
             <li>
                 <strong>更新于
-                    :</strong> 01-18-2025 14:46:20
+                    :</strong> 01-20-2025 00:28:38
             </li>
         
         <li>
@@ -859,7 +962,7 @@ mjx-container[display="true"] + br {
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
 		<div class="page-title">iGEM Notes</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-1-%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-text">0.1 分子生物学基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0-2-%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-text">0.2 生物技术基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E6%A6%82%E8%AE%BA"><span class="nav-text">1. 合成生物学概论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8C%91%E6%88%98%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%8C%96%E6%A0%87%E5%87%86"><span class="nav-text">2. 合成生物学挑战与工程化标准</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E5%85%83%E5%99%A8%E4%BB%B6"><span class="nav-text">3. 合成生物学元器件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%9B%8B%E7%99%BD%E8%B4%A8%E5%85%83%E4%BB%B6%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="nav-text">4. 蛋白质元件与设计</span></a></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-1-%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-text">0.1 分子生物学基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0-2-%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-text">0.2 生物技术基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E6%A6%82%E8%AE%BA"><span class="nav-text">1. 合成生物学概论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8C%91%E6%88%98%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%8C%96%E6%A0%87%E5%87%86"><span class="nav-text">2. 合成生物学挑战与工程化标准</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E5%85%83%E5%99%A8%E4%BB%B6"><span class="nav-text">3. 合成生物学元器件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%9B%8B%E7%99%BD%E8%B4%A8%E5%85%83%E4%BB%B6%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="nav-text">4. 蛋白质元件与设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-DNA%E7%BB%84%E8%A3%85%E6%8A%80%E6%9C%AF-%E5%88%86%E5%AD%90%E5%85%8B%E9%9A%86"><span class="nav-text">5. DNA组装技术&#x2F;分子克隆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1-%E7%94%9F%E7%89%A9%E7%BD%91%E7%BB%9C%E8%AE%BE%E8%AE%A1-%E5%9F%BA%E5%9B%A0%E7%BA%BF%E8%B7%AF"><span class="nav-text">6.1 生物网络设计-基因线路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-2-%E7%94%9F%E7%89%A9%E7%BD%91%E7%BB%9C%E8%AE%BE%E8%AE%A1-%E4%BF%A1%E5%8F%B7%E7%BD%91%E7%BB%9C"><span class="nav-text">6.2 生物网络设计-信号网络</span></a></li></ol>
 
 	</div>
 </div>
@@ -890,7 +993,7 @@ mjx-container[display="true"] + br {
                     </span>
                     
                         <span>
-                            共 5.8k 字
+                            共 6.9k 字
                         </span>
                     
                 </p>
