@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-01-15T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-01-19T17:24:53.036Z">
+<meta property="article:modified_time" content="2025-01-20T08:04:55.157Z">
 <meta property="article:author" content="Redefine Team">
 <meta property="article:tag" content="iGEM">
 <meta name="twitter:card" content="summary">
@@ -605,8 +605,8 @@ mjx-container[display="true"] + br {
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">01-20-2025 01:24:53</span>
-            <span class="mobile">01-20-2025 01:24:53</span>
+            <span class="desktop">01-20-2025 16:04:55</span>
+            <span class="mobile">01-20-2025 16:04:55</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -628,12 +628,12 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>3.2k 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>4.1k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>12 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>15 分钟</span>
         </span>
     
     
@@ -838,6 +838,50 @@ mjx-container[display="true"] + br {
 <p>Fan in（多对一）、Fan out（一对多）。</p>
 <p>激酶作用：构象改变、互作、降解、定位。</p>
 <p>IOQ：ultrasensitive（超敏，有一个input-output急剧上升的阶段）</p>
+<p>胞内活动的时间定量：转录报告物-大于15min、定位改变-1min、蛋白互作-小于10s</p>
+<p>细胞抑制性：每一个单细胞表现出对应表型有一定随机性，主要是上面的时间定量存在差异。如果观察精度不高，那就会粗略认为整体呈现平均变化。</p>
+<h2 id="7-生物系统建模"><a href="#7-生物系统建模" class="headerlink" title="7. 生物系统建模"></a>7. 生物系统建模</h2><p>常微分动力学方程、随机模拟方法、生物物理模型、布尔逻辑模型、唯象模型（有点形而上的感觉）。</p>
+<p>自治系统、非自治系统（演化规则随时间变化，更多一维）、自由度（指相空间的维数）。低维动力学系统如阻尼振子。</p>
+<p>Fixed Points and Stability.</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/fixed_points.png"></p>
+<p>基因转录建模的基础类型，ppt还是讲得比较清楚，仅作思路引导，并没有特别的掌握要求：</p>
+<details class="blue" data-header-exclude=""><summary><i class="fa-solid fa-chevron-right"></i>搬运于此，想看自戳 </summary>
+              <div class="content">
+              <p>基于化学动力学质量作用定律给出的空启动子（D）和结合启动子（C）的动力学方程，打一个点是牛顿写法的一阶导数。</p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/transcription_modeling1.png" alt="transcriptmodel1"></p><p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.023ex;" xmlns="http://www.w3.org/2000/svg" width="1.061ex" height="1.618ex" role="img" focusable="false" viewBox="0 -705 469 715"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></g></g></g></svg></mjx-container>不过是一个给定情况下的常数，是为了简化表达式而引入的。“quasi steady state”是准稳态。</p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/transcription_modeling2.png" alt="transcriptmodel2"></p><p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.291ex" height="1.375ex" role="img" focusable="false" viewBox="0 -442 1012.6 607.6"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D705" d="M83 -11Q70 -11 62 -4T51 8T49 17Q49 30 96 217T147 414Q160 442 193 442Q205 441 213 435T223 422T225 412Q225 401 208 337L192 270Q193 269 208 277T235 292Q252 304 306 349T396 412T467 431Q489 431 500 420T512 391Q512 366 494 347T449 327Q430 327 418 338T405 368Q405 370 407 380L397 375Q368 360 315 315L253 266L240 257H245Q262 257 300 251T366 230Q422 203 422 150Q422 140 417 114T411 67Q411 26 437 26Q484 26 513 137Q516 149 519 151T535 153Q554 153 554 144Q554 121 527 64T457 -7Q447 -10 431 -10Q386 -10 360 17T333 90Q333 108 336 122T339 146Q339 170 320 186T271 209T222 218T185 221H180L155 122Q129 22 126 16Q113 -11 83 -11Z"></path></g><g data-mml-node="mn" transform="translate(609,-150) scale(0.707)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g></g></g></svg></mjx-container>和<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.339ex;" xmlns="http://www.w3.org/2000/svg" width="2.291ex" height="1.339ex" role="img" focusable="false" viewBox="0 -442 1012.6 592"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D705" d="M83 -11Q70 -11 62 -4T51 8T49 17Q49 30 96 217T147 414Q160 442 193 442Q205 441 213 435T223 422T225 412Q225 401 208 337L192 270Q193 269 208 277T235 292Q252 304 306 349T396 412T467 431Q489 431 500 420T512 391Q512 366 494 347T449 327Q430 327 418 338T405 368Q405 370 407 380L397 375Q368 360 315 315L253 266L240 257H245Q262 257 300 251T366 230Q422 203 422 150Q422 140 417 114T411 67Q411 26 437 26Q484 26 513 137Q516 149 519 151T535 153Q554 153 554 144Q554 121 527 64T457 -7Q447 -10 431 -10Q386 -10 360 17T333 90Q333 108 336 122T339 146Q339 170 320 186T271 209T222 218T185 221H180L155 122Q129 22 126 16Q113 -11 83 -11Z"></path></g><g data-mml-node="mn" transform="translate(609,-150) scale(0.707)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></g></svg></mjx-container>也是常数，进一步简化表达，为了将结合启动子的转录因子（A）的浓度引入进来。<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.436ex" height="1.375ex" role="img" focusable="false" viewBox="0 -442 1076.6 607.6"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g></g></g></svg></mjx-container>和<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.339ex;" xmlns="http://www.w3.org/2000/svg" width="2.436ex" height="1.339ex" role="img" focusable="false" viewBox="0 -442 1076.6 592"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path></g><g data-mml-node="mn" transform="translate(673,-150) scale(0.707)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></g></svg></mjx-container>的相对值在activitor和repressor中有显著不同的占比。无论在下面的哪种情况中，<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.291ex" height="1.375ex" role="img" focusable="false" viewBox="0 -442 1012.6 607.6"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D705" d="M83 -11Q70 -11 62 -4T51 8T49 17Q49 30 96 217T147 414Q160 442 193 442Q205 441 213 435T223 422T225 412Q225 401 208 337L192 270Q193 269 208 277T235 292Q252 304 306 349T396 412T467 431Q489 431 500 420T512 391Q512 366 494 347T449 327Q430 327 418 338T405 368Q405 370 407 380L397 375Q368 360 315 315L253 266L240 257H245Q262 257 300 251T366 230Q422 203 422 150Q422 140 417 114T411 67Q411 26 437 26Q484 26 513 137Q516 149 519 151T535 153Q554 153 554 144Q554 121 527 64T457 -7Q447 -10 431 -10Q386 -10 360 17T333 90Q333 108 336 122T339 146Q339 170 320 186T271 209T222 218T185 221H180L155 122Q129 22 126 16Q113 -11 83 -11Z"></path></g><g data-mml-node="mn" transform="translate(609,-150) scale(0.707)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g></g></g></svg></mjx-container>都代表了本底活性（“residual or basal activity”）。注意考虑mRNA自身会降解。</p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/transcription_modeling3.png" alt="transcriptmodel3"></p><p>展示了在多种不同效应转录因子结合不同位点时的转录过程建模，需要遍历各种情况，因为在真是细胞中的总转录活性是不同结合情况的宏观体现。至于X、Y是几次幂，这是看启动转录过程中需要多少个相同种转录因子结合，因为究其发源是质量作用定律。</p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/transcription_modeling4.png" alt="transcriptmodel4"></p><p>如果是相同位点，那就只有下面的情况。</p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/transcription_modeling5.png" alt="transcriptmodel5"></p>
+              </div>
+            </details>
+
+<details class="blue" data-header-exclude=""><summary><i class="fa-solid fa-chevron-right"></i>然后是单转录因子自反馈的建模，想看自戳 </summary>
+              <div class="content">
+              <p>模型中mRNA的合成受到产物的反馈影响，而蛋白质合成与分解被简单认为是两个一级反应。</p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/translation_modeling1.png" alt="translatemodel1"></p><p>最后产生的蛋白以何种数量方式反馈影响自身转录会影响系统存在几个稳定点，以及稳定与否。</p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/translation_modeling2.png" alt="translatemodel2"></p><p>通过选点模拟，明显差异：</p><p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/fixed_points_differ.png" alt="mass_rule_simulation"></p>
+              </div>
+            </details>
+
+<details class="blue" data-header-exclude=""><summary><i class="fa-solid fa-chevron-right"></i>双因子负反馈，没有建模过程，主要是模拟，想看自戳 </summary>
+              <div class="content">
+              <p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/bilingual_negative_feedback.png" alt="bilingual_simulation"></p>
+              </div>
+            </details>
+
+<details class="blue" data-header-exclude=""><summary><i class="fa-solid fa-chevron-right"></i>振荡（oscillations）建模，想看自戳 </summary>
+              <div class="content">
+              <p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/oscillation.png" alt="oscillation"></p>
+              </div>
+            </details>
+
+<p><strong>随机性</strong>，果蝇视觉细胞发育、感受态调控通路……</p>
+<p><strong>内噪声</strong>（引入后，转录调控等等，或者基因拷贝数增长差异）与<strong>外噪声</strong>（人工引入差异，比如基因拷贝数之类）。</p>
+<p><strong>随机模拟的gillespie algorithm</strong>：另外通过区分快慢反应可以简化模型。</p>
+<blockquote>
+<p>Gillespie算法是一种用于模拟化学反应系统随机动力学行为的算法，特别适用于合成生物学中分子数量较少、反应随机性显著的系统（分子间碰撞偶然发生、反应发生与否受热力学涨落影响）。</p>
+<p>Gillespie算法通过随机抽样来决定下一个反应事件及其发生时间。它基于马尔可夫过程，即系统的未来状态只依赖于当前状态。</p>
+</blockquote>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/iGEM_Notes/gillespie.png" alt="gillespie_algorithm"></p>
+<h2 id="8-人工合成系统的模拟计算"><a href="#8-人工合成系统的模拟计算" class="headerlink" title="8. 人工合成系统的模拟计算"></a>8. 人工合成系统的模拟计算</h2>
+  <div class="note p-4 mb-4 rounded-small yellow icon-padding">
+    <i class="note-icon fa-solid fa-exclamation-triangle"></i><p>Nothing Found Here.</p>
+
+  </div>
 
 		</div>
 
@@ -852,7 +896,7 @@ mjx-container[display="true"] + br {
         
             <li>
                 <strong>更新于
-                    :</strong> 01-20-2025 01:24:53
+                    :</strong> 01-20-2025 16:04:55
             </li>
         
         <li>
@@ -970,7 +1014,7 @@ mjx-container[display="true"] + br {
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
 		<div class="page-title">iGEM Notes</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-1-%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-text">0.1 分子生物学基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0-2-%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-text">0.2 生物技术基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E6%A6%82%E8%AE%BA"><span class="nav-text">1. 合成生物学概论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8C%91%E6%88%98%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%8C%96%E6%A0%87%E5%87%86"><span class="nav-text">2. 合成生物学挑战与工程化标准</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E5%85%83%E5%99%A8%E4%BB%B6"><span class="nav-text">3. 合成生物学元器件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%9B%8B%E7%99%BD%E8%B4%A8%E5%85%83%E4%BB%B6%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="nav-text">4. 蛋白质元件与设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-DNA%E7%BB%84%E8%A3%85%E6%8A%80%E6%9C%AF-%E5%88%86%E5%AD%90%E5%85%8B%E9%9A%86"><span class="nav-text">5. DNA组装技术&#x2F;分子克隆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1-%E7%94%9F%E7%89%A9%E7%BD%91%E7%BB%9C%E8%AE%BE%E8%AE%A1-%E5%9F%BA%E5%9B%A0%E7%BA%BF%E8%B7%AF"><span class="nav-text">6.1 生物网络设计-基因线路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-2-%E7%94%9F%E7%89%A9%E7%BD%91%E7%BB%9C%E8%AE%BE%E8%AE%A1-%E4%BF%A1%E5%8F%B7%E7%BD%91%E7%BB%9C"><span class="nav-text">6.2 生物网络设计-信号网络</span></a></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-1-%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-text">0.1 分子生物学基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0-2-%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-text">0.2 生物技术基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E6%A6%82%E8%AE%BA"><span class="nav-text">1. 合成生物学概论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E6%8C%91%E6%88%98%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%8C%96%E6%A0%87%E5%87%86"><span class="nav-text">2. 合成生物学挑战与工程化标准</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E5%85%83%E5%99%A8%E4%BB%B6"><span class="nav-text">3. 合成生物学元器件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%9B%8B%E7%99%BD%E8%B4%A8%E5%85%83%E4%BB%B6%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="nav-text">4. 蛋白质元件与设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-DNA%E7%BB%84%E8%A3%85%E6%8A%80%E6%9C%AF-%E5%88%86%E5%AD%90%E5%85%8B%E9%9A%86"><span class="nav-text">5. DNA组装技术&#x2F;分子克隆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1-%E7%94%9F%E7%89%A9%E7%BD%91%E7%BB%9C%E8%AE%BE%E8%AE%A1-%E5%9F%BA%E5%9B%A0%E7%BA%BF%E8%B7%AF"><span class="nav-text">6.1 生物网络设计-基因线路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-2-%E7%94%9F%E7%89%A9%E7%BD%91%E7%BB%9C%E8%AE%BE%E8%AE%A1-%E4%BF%A1%E5%8F%B7%E7%BD%91%E7%BB%9C"><span class="nav-text">6.2 生物网络设计-信号网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E7%94%9F%E7%89%A9%E7%B3%BB%E7%BB%9F%E5%BB%BA%E6%A8%A1"><span class="nav-text">7. 生物系统建模</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E4%BA%BA%E5%B7%A5%E5%90%88%E6%88%90%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A8%A1%E6%8B%9F%E8%AE%A1%E7%AE%97"><span class="nav-text">8. 人工合成系统的模拟计算</span></a></li></ol>
 
 	</div>
 </div>
@@ -1001,7 +1045,7 @@ mjx-container[display="true"] + br {
                     </span>
                     
                         <span>
-                            共 6.9k 字
+                            共 8.1k 字
                         </span>
                     
                 </p>
